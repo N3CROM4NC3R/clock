@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?85tgpt');
+  src:  url('../fonts/icomoon.eot?85tgpt#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?85tgpt') format('truetype'),
+    url('../fonts/icomoon.woff?85tgpt') format('woff'),
+    url('../fonts/icomoon.svg?85tgpt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-stopwatch:before {
+  content: "\e952";
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+*{
+    font-family:sans-serif;
+}
+/*--Body/Cuerpo--*/
+body{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:#000000;
+    color:#FFFFFF;
+
+}
+
+/*--Header/Cabezera--*/
+.header{
+    background-color:#FFFFFF;
+    border-radius:10px;
+    color:#000000;
+    opacity: 0.9;
+    padding:1em;
+    text-align:center;
+
+}
+
+.header-title{
+    font-size:2em;
+    font-weight:bold;
+    font-style: italic;
+}
+
+
+.contact-github a,
+.code a{
+    background-color:blue;
+    padding:10px;
+    border-radius:10px;
+    color:#FFFFFF;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+.contact-github a:hover,
+.code a:hover{
+    padding:5px;
+    font-size:1.1em;
+}
+/*-------------------*/
+
+/*Section*/
+.section{
+    margin:2em 0;
+}
+.clock{
+    margin:auto;
+    text-align: center;
+    padding:.5em;
+    border-radius:100%;
+    font-size:8em;
+    border: 2px solid red;
+}
+/*--------*/
+
+/*--Footer/Pie*/
+.footer{
+    background-color:#FFFFFF;
+    opacity: 0.9;
+    padding:1em;
+
+    border-radius: 10px;
+    color:#000000;
+    text-align:center;
+}
+.contact{
+    font-size:1em;
+}
+/*-------------*/
+
+@media screen and (max-width:1023px){
+    .section{
+        font-size:14px;
+    }
+
+}
+@media screen and (max-width:779px){
+    .section{
+        font-size:10px;
+    }
+}
+
+@media screen and (max-width:479px) {
+
+    .title{
+        font-size:1.5em;
+    }
+    .section{
+        font-size:6px;
+    }
+
+    .footer{
+        font-size:.7em;
+    }
+
+
+
+}
